@@ -1,9 +1,12 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
 
 export const Admin = () => {
     return (
-        <div>
-            <h1>Admin</h1>
-        </div>
+        <Container>
+        
+           <Button>Добавить</Button>
+        </Container>
     )
 }

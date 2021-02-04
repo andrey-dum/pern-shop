@@ -1,12 +1,17 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
+
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 import { FaRegStar } from 'react-icons/fa';
+import { DEVICE_ROUTE } from '../utils/consts'
 
 export const DeviceItem = ({device}) => {
+    const history = useHistory()
+
     return (
-        <Col md={3} className="mt-3">
+        <Col md={3} className="mt-3" onClick={() => history.push(DEVICE_ROUTE + `/${device.id}`)}>
             <Card 
                 style={{cursor: 'pointer', width: 150}} 
                 border={'light'}
