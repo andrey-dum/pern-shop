@@ -7,6 +7,8 @@ import Image from 'react-bootstrap/Image'
 import { FaRegStar } from 'react-icons/fa';
 import { DEVICE_ROUTE } from '../utils/consts'
 
+const RACT_APP_API_URL = 'http://localhost:5000/'
+
 export const DeviceItem = ({device}) => {
     const history = useHistory()
 
@@ -18,7 +20,7 @@ export const DeviceItem = ({device}) => {
                 key={device.id} 
                 className={`p-3`}
             >
-                <Image style={{width: 150, maxWidth: '100%', height: 'auto'}} src={device.img} />
+                <Image style={{width: 150, maxWidth: '100%', height: 'auto'}} src={RACT_APP_API_URL + device.img} />
                 <div className="text-black-50 mt-1 d-flex justify-content-between align-items-center">
                     <div>apple</div>
                     <div className="d-flex align-items-center">

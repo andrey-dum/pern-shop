@@ -4,21 +4,21 @@ import {makeAutoObservable} from 'mobx'
 export default class DeviceStore {
     constructor() {
         this._types = [
-            {id: 1, name: 'Смартфоны'},
-            {id: 2, name: 'Ноутбуки'},
-            {id: 3, name: 'Телевизоры'},
-            {id: 4, name: 'Холодильники'},
+            // {id: 1, name: 'Смартфоны'},
+            // {id: 2, name: 'Ноутбуки'},
+            // {id: 3, name: 'Телевизоры'},
+            // {id: 4, name: 'Холодильники'},
         ]
         this._brands = [
-            {id: 1, name: 'Apple'},
-            {id: 2, name: 'Samsung'},
-            {id: 3, name: 'Lenovo'},
-            {id: 4, name: 'LG'},
+            // {id: 1, name: 'Apple'},
+            // {id: 2, name: 'Samsung'},
+            // {id: 3, name: 'Lenovo'},
+            // {id: 4, name: 'LG'},
         ]
         this._devices = [
-            {id: 1, name: '12 pro', price: 25000, rating: 5, img: "https://i.citrus.ua/imgcache/size_500/uploads/shop/d/2/d21fc7834096ee92025677dcd757bb81.jpg"},
-            {id: 2, name: '10 pro', price: 10000, rating: 5, img: "https://i.citrus.ua/imgcache/size_500/uploads/shop/d/2/d21fc7834096ee92025677dcd757bb81.jpg"},
-            {id: 3, name: '11 pro', price: 20000, rating: 5, img: "https://i.citrus.ua/imgcache/size_500/uploads/shop/d/2/d21fc7834096ee92025677dcd757bb81.jpg"},
+            // {id: 1, name: '12 pro', price: 25000, rating: 5, img: "https://i.citrus.ua/imgcache/size_500/uploads/shop/d/2/d21fc7834096ee92025677dcd757bb81.jpg"},
+            // {id: 2, name: '10 pro', price: 10000, rating: 5, img: "https://i.citrus.ua/imgcache/size_500/uploads/shop/d/2/d21fc7834096ee92025677dcd757bb81.jpg"},
+            // {id: 3, name: '11 pro', price: 20000, rating: 5, img: "https://i.citrus.ua/imgcache/size_500/uploads/shop/d/2/d21fc7834096ee92025677dcd757bb81.jpg"},
         ]
         this._selectedType = {}
         this._selectedBrand = {}
